@@ -1,0 +1,17 @@
+.test--message--cont {
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.test--message--cont h1 {
+    text-transform: uppercase;
+    color: var(--color-10);
+    text-align: center;
+    font-size: var(--title);
+    letter-spacing: var(--title-spacing);
+    line-height: var(--title-height);
+}

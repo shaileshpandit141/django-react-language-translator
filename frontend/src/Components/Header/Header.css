@@ -1,0 +1,14 @@
+.header {
+    color: var(--color-10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h2 { 
+    text-align: center;
+    font-size: var(--heading);
+    line-height: var(--heading-height);
+    letter-spacing: var(--heading-spacing);
+    margin-block: 2.5rem;
+}

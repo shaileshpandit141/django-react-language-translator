@@ -1,0 +1,50 @@
+/* || CSS Font Size Variables */
+:root {
+
+  /* | For Display Text  */
+  --display: 4rem;
+  /* 64px */
+  --display-height: 44px;
+
+  /* | For Heading Text  */
+  --heading: 2.813rem;
+  /* 45px */
+  --heading-height: 36px;
+
+  /* | For Title Text  */
+  --title: 1.25rem;
+  /* 20px */
+  --title-height: 24px;
+  --title-spacing: 0.15px;
+
+  /* | For Label Text  */
+  --label: 1.125rem;
+  /* 18px */
+  --label-height: 16px;
+  --label-spacing: 0.5px;
+
+  /* | For body Text  */
+  --body-m: 0.875rem;
+  /* 14px */
+  --body-m-height: 20px;
+  --body-m-spacing: 0.25px;
+
+  /* || All Color variables */
+  --background-color: #f3f3de;
+  --color-60: #ffffff;
+  --color-30: #e4e4ce;
+  --color-10: #282c34;
+  --hover-color: #cecebb;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.protect--overflow {
+  display: flex;
+  overflow: hidden;
+  width: fit-content;
+}

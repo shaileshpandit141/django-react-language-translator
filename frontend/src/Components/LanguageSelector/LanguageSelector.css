@@ -1,0 +1,87 @@
+/* Custom selector styles  */
+
+.custom--selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.selected--language {
+    width: 150px;
+    padding: 5px 0px 5px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    border-radius: 999rem;
+    background-color: var(--color-30);
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.selected--language #selectedLanguage {
+    padding-block: 2.5px;
+    color: var(--color-10);
+    font-size: var(--label);
+    font-weight: 600;
+    letter-spacing: var(--label-spacing);
+    line-height: var(--label-height);
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.selected--language:hover {
+    background-color: var(--color-30);
+}
+
+
+
+.selected--language .figure--cont {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected--language .figure--cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.option--cont {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 0;
+    overflow: hidden;
+    background-color: var(--color-10);
+    color: var(--color-60);
+    border-radius: 8px;
+    transition: height 0.3s ease-in-out;
+}
+
+.option--cont .option--inner--cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    overflow: hidden;
+    overflow-y: scroll
+}
+
+.option--inner--cont span {
+    padding: 8px 16px;
+}
+
+.option--inner--cont span:hover {
+    background-color: var(--hover-color);
+    color: var(--color-10);
+}

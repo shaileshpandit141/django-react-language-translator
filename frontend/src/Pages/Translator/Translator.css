@@ -1,0 +1,167 @@
+/* main Translator container styles  */
+
+.translator--cont {
+    padding-bottom: 5PX;
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+}
+
+
+@media (width < 769px) {
+    .translator--cont {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* left side that means translator input section styles */
+
+.translator--source--cont {
+    height: fit-content;
+    width: 100%;
+}
+
+
+.source--language--cont {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 7.5px;
+}
+
+
+.source--language--cont div {
+    background-color: var(--color-30);
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border-radius: 999rem;
+    overflow: hidden;
+    color: var(--color-10);
+    font-size: var(--label);
+    font-weight: 600;
+    letter-spacing: var(--label-spacing);
+    line-height: var(--label-height);
+}
+
+
+#source--translator--text {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    resize: none;
+    padding: 9.5px 15px;
+    border-radius: 12px;
+    background-color: var(--color-30);
+    border: none;
+    outline: 3px solid var(--color-30);
+    transition: outline-color 0.3s ease-in-out;
+}
+
+
+#source--translator--text:hover {
+    outline-color: var(--hover-color);
+}
+
+
+#source--translator--text,
+#source--translator--text::placeholder {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: var(--color-10);
+    font-weight: 500;
+    font-size: var(--body-m);
+    line-height: var(--body-m-height);
+    letter-spacing: var(--body-m-spacing);
+}
+
+
+/* Translation language flow container styles  */
+
+.translator--diraction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.direction--icon--cont {
+    aspect-ratio: 1/1;
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+}
+
+
+@media (width < 769px) {
+    .direction--icon--cont {
+        transform: rotate(90deg);
+    }
+}
+
+
+.direction--icon--cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* Right section that mens target container styles  */
+
+.translator--target--cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.target--language--cont {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--color-10);
+    font-size: var(--label);
+    letter-spacing: var(--label-spacing);
+    line-height: var(--label-height);
+    padding-block: 5px;
+}
+
+
+.translated--text {
+    width: 100%;
+    background-color: transparent;
+}
+
+
+.translated--text {
+    width: 100%;
+    height: 250px;
+}
+
+
+.translated--text p {
+    border-radius: 12px;
+    background-color: var(--color-30);
+    padding: 9.5px 15px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    color: var(--color-10);
+    font-weight: 500;
+    font-size: var(--body-m);
+    line-height: var(--body-m-height);
+    letter-spacing: var(--body-m-spacing);
+}
+
+.translated--text p::first-letter {
+    text-transform: capitalize;
+}
