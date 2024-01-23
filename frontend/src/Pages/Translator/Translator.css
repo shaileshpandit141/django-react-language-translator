@@ -87,7 +87,20 @@
 }
 
 
+.translator--diraction .empty--space {
+    height: 50px;
+}
+
+
+@media (width < 769px) {
+    .translator--diraction .empty--space {
+        height: unset;
+    }
+}
+
+
 .direction--icon--cont {
+    user-select: none;
     aspect-ratio: 1/1;
     width: 28px;
     height: 28px;

@@ -25,12 +25,10 @@ export default function Translator() {
             translateText: translateText
         }
 
-        if (translateText !== '') {
-            requestToServer('/api/translator/', 'POST', { 'Content-Type': 'application/json' }, requestData)
-                .then(data => {
-                    setTranslatedText(data.data[0])
-                })
-        }
+        requestToServer('/api/translator/', 'POST', { 'Content-Type': 'application/json' }, requestData)
+            .then(data => {
+                setTranslatedText(data.data[0])
+            })
 
     }, [selectedLanguage, translateText])
 
@@ -53,6 +51,7 @@ export default function Translator() {
             </section>
 
             <section className="translator--diraction">
+                <div className='empty--space'></div>
                 <figure className='direction--icon--cont'>
                     <img src={directionIcon} alt="directionIcon" />
                 </figure>
@@ -64,7 +63,7 @@ export default function Translator() {
                 </div>
                 <div className='translated--text'>
                     <p>
-                        {translatedText.translatedText == null? 'Output...' : translatedText.translatedText}
+                        {translatedText.translatedText == '' ? 'Output...' : translatedText.translatedText}
                     </p>
                 </div>
             </section>
